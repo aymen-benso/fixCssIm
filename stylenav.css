@@ -1,0 +1,47 @@
+
+  *{
+    list-style-type: none;
+text-decoration: none
+
+  }
+  body{
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  header{
+    height: 100vh;
+    width: 10vw;
+
+}
+.navbar{
+    margin: 40px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    box-sizing: border-box;
+}
+.navbar a{
+color: aqua;
+}
+.navbar .logo{
+    font-size: 2em;
+    font-weight: bold;
+}
+.navbar .nav ul{
+    display: flex;
+}
+.navbar .nav ul li{
+margin: 0 25px;
+}
+.btn{ 
+  /* color: rgb(54, 54, 88);  */
+  color: aliceblue;
+ font-weight: bolder;
+ font-size: 12px;
+ font-style:normal;
+ margin-left:4px ;
+ border: none;
+ background: none;
+ cursor: pointer;  
+
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta thhp-equive"X-UA-Compatible" content="IE-edge,chrome=1">
+  
+  <title>searchInterShip</title>
+  <link rel="stylesheet" href="searchInterShip.css">
+  <script src=".\searchInterShip.js"></script>
+</head>
+<body>
+  <div class="rectangles">
+    <div class="pageAccuiel">
+      <div class="firstPart">
+        <div class="header">
+          <div class="buttons">
+            <img src=".\marouaLogo.svg" class="logo">
+  
+            <div class="btn"> <button class="btn"> Home</button></div>
+            <div class="btn"> <button class="btn" id="btnAboutUs" onclick="SwitchPage('aboutUs.html')"> About Us</button></div>
+            <div class="btn"> <button class="btn" id="btnContact" onclick="SwitchPage('contactUs.html')"> Contact Us</button> </div>
+            <div class="btn"> <button class="btn" id="btnService" onclick="SwitchPage('service.html')"> Service</button></div>
+            <div> <button class="btn_compte btns" id="btn_compt" onclick="SwitchPage('count.html')">
+                <span class="material-symbols-outlined">account_circle</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="rectangle rectangle1">
+      <img src="https://media.licdn.com/dms/image/D4D22AQG2fgGwvulFaQ/feedshare-shrink_800/0/1711497398642?e=2147483647&v=beta&t=1VMKXe9BgoKy8rKuMDDTLFYENeWz4L3e-UHu9uiCuEc" alt="Image 1">
+    </div>
+    <div class="rectangle rectangle2">
+      <img src="https://seniorlivingresolutions.com/images/adultdaycare.jpg" alt="Image 2">
+    </div>
+    <div class="rectangle rectangle3">
+      <img src="https://www.reconversionprofessionnelle.org/wp-content/uploads/2021/04/tenue-de-la-comptabilite.jpg" alt="Image 3">
+    </div>
+  </div>
+
+  <div class="contenu">
+    <p id="monTexte">Computer science</p>
+    <p id="monTexte1">accounting</p>
+    <p id="monTexte2">marketing</p>
+  </div>
+ 
+
+  <div id="conteneur">
+    <p>Internships in computer science provide students with hands-on experience, project involvement, professional collaboration, and essential skill development.</p>
+  </div>
+
+  <div id="conteneur1">
+    <p>Marketing internships bridge the gap between theoretical knowledge and practical marketing strategies, equipping students with industry-relevant skills.</p>
+  </div>
+
+  <div id="conteneur2">
+    <p>Accounting internships offer students practical experience  within a professional setting.They provide hands-on learning,industry insight and skill development.</p>
+  </div>
+  <div>
+  <select id="select1" name="select1" class="select">
+    <option value="">serch internship </option>
+    <option value="projet">Web development</option>
+    <option value="projet2">cyber security</option>
+    <option value="projet1">network </option>
+  </select>
+</div>
+<div>
+  <select id="select2" name="select2" class="select1">
+    <option value="">serch internship </option>
+    <option value="projet3">accounting assistant</option>
+    <option value="projet4">social accountant</option>
+    <option value="projet5">  budget management</option>
+  </select>
+</div>
+<div>
+  <select id="select3" name="select3" class="select2">
+    <option value="">serch internship </option>
+    <option value="projet6">marketing assistant</option>
+    <option value="projet7">media manager</option>
+    <option value="projet8">Concepter multimedia </option>
+  </select>
+  
+</div>
+<script>
+document.getElementById('select1').addEventListener('change', function() {
+  var selectedValue = this.value;
+  if (selectedValue) {
+      // Redirige vers la page correspondante
+      window.location.href = selectedValue + ".html";
+  }
+});
+
+  document.getElementById('select2').addEventListener('change', function() {
+    var selectedValue = this.value;
+    if (selectedValue) {
+        // Redirige vers la page correspondante
+        window.location.href = selectedValue + ".html";
+    }
+  });
+ 
+    document.getElementById('select3').addEventListener('change', function() {
+      var selectedValue = this.value;
+      if (selectedValue) {
+         
+          window.location.href = selectedValue + ".html";
+      }
+    });
+    let btnContact=document.getElementById("btnContact");
+function SwitchPage(url) {
+    if (url != ' ') {
+         window.location =url;
+    } 
+} 
+let btnAboutUs=document.getElementById("btnAboutUs");
+let btnReturn=document.getElementById("return");
+let btnService=document.getElementById("btnService");
+let btnHome=document.getElementById("btnHome");
+let btn_search=document.getElementById("btn_search");
+function SwitchPage(url) {
+    if (url != ' ') {
+         window.location =url;
+    } 
+} 
+    </script>
+  
+</body>
+</html>
